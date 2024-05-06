@@ -11,6 +11,11 @@ export default {
         secondary: ""
       }
     },
+    screens: {
+      'tablet': '640px',
+      'laptop': '1024px',
+      'desktop': '1536px',
+    }
   },
   plugins: [],
 }

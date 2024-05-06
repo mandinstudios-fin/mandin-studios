@@ -46,7 +46,7 @@ const Navbar = () => {
                 </div>
                 
                 <div>
-                    <ul className='hidden md:flex md:justify-around mt-8'>
+                    <ul className='hidden laptop:flex md:justify-around mt-10'>
                         <li onClick={changeArrow}>
                             <p className='cursor-pointer inline mr-1'>services</p>
                             <motion.span animate={{ rotate: isArrowUp ? 180 : 0 }} transition={{duration: 0.3}} className='inline-block'>
@@ -77,13 +77,13 @@ const Navbar = () => {
                         </li>
                     </ul>
                     
-                    <div className='md:hidden mt-12 mx-auto'>
+                    <div className='laptop:hidden mt-12 mx-auto laptop:-mr-32'>
                         <RxHamburgerMenu size={30}/>
                     </div>
                 </div>
 
                 <div>
-                    <button className='hidden md:block bg-[#A2B3D4] p-3 py-1 rounded-full mt-10'>Onln Coin Live</button>
+                    <button className='hidden laptop:block bg-[#A2B3D4] p-3 py-1 rounded-full mt-10'>Onln Coin Live</button>
                 </div>
 
             </nav>

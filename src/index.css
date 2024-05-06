@@ -4,10 +4,12 @@
 
 html {
   font-family: "Montserrat";
+  background-color: #f5f5f5;
 }
 
 .heading {
   overflow: hidden;
+  padding-bottom: 6px;
 }
 
 .heading::before {
