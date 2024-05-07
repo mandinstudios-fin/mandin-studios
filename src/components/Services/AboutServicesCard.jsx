@@ -4,24 +4,16 @@ const AboutServicesCard = ({ about }) => {
     const { title, description, image } = about;
 
     return (
-        <div className='border border-black rounded-2xl w-2/3 h-auto mb-24 mx-auto overflow-hidden'>
-            <div>
-                <div className='flex'>
-                    <div className='w-2/3'>
-                        <div className='p-12 pb-0'>
-                            <div className='text-left text-xl font-semibold'><h1>{title}</h1></div>
-                            <div className='text-left text-sm mt-2'><p>{description}</p></div>
-                        </div>
-                    </div>
-
-                    <div className='w-1/3'>
-                        <img src={image}/>
-                    </div>
+        <div className='card sticky mb-20'>
+            <div className='laptop:w-[900px] h-auto flex flex-col tablet:flex-row mx-auto border bg-white'>
+                <div className='tablet:w-2/3 text-left p-8 laptop:pl-11 laptop:py-20 laptop:my-auto'>
+                    <div><h1 className='text-3xl font-bold mb-7'>{title}</h1></div>
+                    <div><p>{description}</p></div>
                 </div>
-            </div>
-            
-            <div>
 
+                <div className='h-full'>
+                    <img src={image} className=''/>
+                </div>
             </div>
         </div>
     )

@@ -1,23 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import AboutServicesCard from './AboutServicesCard'
-import { aboutServices } from '../../assets/index'
+import { whatwedo } from '../../assets/index'
+import { gsap } from 'gsap';
+import { ScrollTrigger }  from 'gsap/ScrollTrigger';
+
 
 const About = () => {
+  
+
   return (
     <>
-        <div className='mt-32 tablet:mt-52 text-center' data-scroll-section>
+        <div className='mt-32 tablet:mt-52 text-center'>
             <div>
-                <div><h1 className='text-4xl md:text-6xl font-bold md:inline-block'>How We Do ?</h1></div>
-                <div><h1 className='text-4xl md:text-6xl font-bold md:inline-block'>What We Do ?</h1></div>
+                <div className='inline-block'><h1 className='text-4xl md:text-6xl font-bold laptop:mr-2'>How We Do </h1></div>
+                <div className='inline-block'><h1 className='text-4xl md:text-6xl font-bold '>What We Do </h1></div>
             </div>
 
-            <div className='mx-auto grid grid-cols-1 mt-24'>
-                <div className=''>
+            <div className='servicecontainer mt-20 '>
+                <div className='grid grid-cols-1 mx-6'>
                     {
-                        aboutServices.map((about, index) => (<AboutServicesCard about={about} key={index}/>))
+                        whatwedo.map((about, index) => (<AboutServicesCard about={about} key={index}/>))
                     }
                 </div>
             </div>
+            
         </div>
     </>
   )

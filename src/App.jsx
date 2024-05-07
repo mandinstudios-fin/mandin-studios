@@ -1,16 +1,17 @@
 import { useState } from 'react'
-import { Navbar, Hero, Services, About, Teams } from './components/index'
-import './css/locomotive-scroll.css'
+import { Navbar, Contact } from './components/index'
+import Main from './components/Main'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Teams />
-      <Services />
+      <Routes>
+        <Route path='/' element={<Main />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
     </>
   )
 }

@@ -28,8 +28,8 @@ const About = () => {
 
   return (
     <>
-        <div data-scroll-container>
-            <div data-scroll-section>
+        <div>
+            <div>
                 <div className='mt-14 laptop:mt-32'>
                     <div className='h-12 w-full bg-primary'></div>
                 </div>

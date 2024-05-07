@@ -18,6 +18,29 @@ export const aboutServices = [
     }
 ]
 
+export const whatwedo = [
+    {
+        title: "Talent Development",
+        description: "At MD Studios, we believe in nurturing the next generation of visionaries. Our talent development program is designed to cultivate creativity, ignite passion, and inspire innovation. From interns to seasoned professionals, we provide opportunities for growth and learning.",
+        image: ""
+    },
+    {
+        title: "Interactive Strategies",
+        description: "At MD Studios, we specialize in crafting interactive strategies that captivate audiences and drive results. From immersive experiences to dynamic campaigns, we leverage the latest technologies to engage users on every level. Our approach is rooted in innovation, combining creativity with strategic thinking to deliver impactful solutions.",
+        image: ""
+    },
+    {
+        title: "Values",
+        description: "At MD Studios, our values are more than just words – they're the guiding principles behind everything we do. Integrity, innovation, and collaboration are at the heart of our culture, driving us to push boundaries and exceed expectations. We believe in transparency, accountability, and respect, fostering a culture of trust and empowerment.",
+        image: ""
+    },
+    {
+        title: "Viable Mindset",
+        description: "At MD Studios, we understand that success isn't just about talent or resources; it's about mindset. That's why we're dedicated to cultivating a viable mindset that empowers visionaries to thrive. Through a culture of adaptability, resilience, and innovation, we equip individuals with the tools they need to navigate challenges and seize opportunities. ",
+        image: ""
+    }
+]
+
 export const teams = [
     {
         title: "MDS Operations Team",

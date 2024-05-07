@@ -45,7 +45,7 @@ const Hero = () => {
 
   return (
     <>
-        <div className='flex flex-col laptop:flex-row justify-center items-center' data-scroll-section>
+        <div className='flex flex-col laptop:flex-row justify-center items-center'>
             <div className="laptop:ml-12 laptop:mr-12">
                 <div>
                     <h3 className=''>We make Digital and Simple</h3>
