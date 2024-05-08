@@ -74,25 +74,25 @@ const Form = () => {
             <div className='laptop:flex mt-2'>
                 <div className='laptop:w-1/2 laptop:mr-4'>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[98%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg ' placeholder='Name*'/>
+                        <input type='text' className='w-[97%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg ' placeholder='Name*'/>
                     </div>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[98%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg ' placeholder='Email*'/>
+                        <input type='text' className='w-[97%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg ' placeholder='Email*'/>
                     </div>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[98%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg' placeholder='Message*'/>
+                        <input type='text' className='w-[97%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg' placeholder='Message*'/>
                     </div>
                 </div>
 
                 <div className='laptop:w-1/2 laptop:ml-4'>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[98%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg ' placeholder='Last Name*'/>
+                        <input type='text' className='w-[97%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg ' placeholder='Last Name*'/>
                     </div>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[98%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg ' placeholder='Phone No.*'/>
+                        <input type='text' className='w-[97%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg ' placeholder='Phone No.*'/>
                     </div>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[98%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg ' placeholder={`I'm lookig for help with*`}/>
+                        <input type='text' className='w-[97%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg ' placeholder={`I'm lookig for help with*`}/>
                     </div>
                 </div>
             </div>
