@@ -50,20 +50,20 @@ const Form = () => {
 
   return (
     <div className='text-[#385584] pb-12'>
-        <div className='contact mt-12'>
-            <div><p className='font-semibold'>Contact Form</p></div>
+        <div className='contact mt-12 mb-12'>
+            <div><p className='font-semibold laptop:text-2xl'>Contact Form</p></div>
         </div>
 
         <div>
             <div className='intro'>
-                <div className='laptop:text-left laptop:mt-0 mt-4'>
+                <div className='laptop:text-left laptop:text-2xl laptop:mt-0 mt-4'>
                     <p>Every good partnership starts with coffee.</p>
                     <p>Now let's make an appointment</p>
                 </div>
 
                 <div className='laptop:text-right laptop:mt-0 mt-4'>
                     <div className='inline-block laptop:text-right'>
-                        <p className='laptop:text-right font-medium'>info@mandinstudios.com</p>
+                        <p className='laptop:text-right font-medium laptop:text-2xl'>info@mandinstudios.com</p>
                     </div>
                 </div>
             </div>
@@ -72,34 +72,34 @@ const Form = () => {
 
         <div className='form'>
             <div className='laptop:flex mt-2'>
-                <div className='laptop:w-1/2 laptop:mr-4'>
+                <div className='laptop:w-1/2 laptop:mr-2'>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[97%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg ' placeholder='Name*'/>
+                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-2xl laptop:ml-4 bg-transparent focus:outline-none ' placeholder='Name*'/>
                     </div>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[97%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg ' placeholder='Email*'/>
+                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-2xl laptop:ml-4 bg-transparent focus:outline-none ' placeholder='Email*'/>
                     </div>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[97%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg' placeholder='Message*'/>
+                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-2xl laptop:ml-4 bg-transparent focus:outline-none' placeholder='Message*'/>
                     </div>
                 </div>
 
-                <div className='laptop:w-1/2 laptop:ml-4'>
+                <div className='laptop:w-1/2 laptop:ml-2'>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[97%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg ' placeholder='Last Name*'/>
+                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-2xl laptop:ml-4 bg-transparent focus:outline-none ' placeholder='Last Name*'/>
                     </div>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[97%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg ' placeholder='Phone No.*'/>
+                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-2xl laptop:ml-4 bg-transparent focus:outline-none ' placeholder='Phone No.*'/>
                     </div>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[97%] laptop:ml-4 bg-transparent focus:outline-none text-xl laptop:text-lg ' placeholder={`I'm lookig for help with*`}/>
+                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-2xl laptop:ml-4 bg-transparent focus:outline-none ' placeholder={`I'm looking for help with*`}/>
                     </div>
                 </div>
             </div>
 
             <div className='laptop:text-right text-center'>
-                <div className='mt-8 bg-[#385584] rounded-full inline-block'>
-                    <button className='text-xl p-2 px-7 text-white'>Send</button>
+                <div className='mt-8 bg-[#385584] rounded-2xl inline-block'>
+                    <button className='text-xl p-3 px-10 text-white'>Send</button>
                 </div>
             </div>
             

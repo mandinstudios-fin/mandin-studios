@@ -3,21 +3,9 @@ import { teams } from '../../assets/index'
 import TeamsCard from './TeamsCard';
 
 const Teams = () => {
-  const divRef = useRef(null);
-
-  // useEffect(()=>{
-  //   const scroll = new LocomotiveScroll({
-  //   el: divRef.current,
-  //   smooth: true,
-  
-  // })
-  // return () => scroll.destroy()
-  
-  // },[])
-
   return (
     <>
-      <div>
+      <div className='bg-'>
         <div className='mt-32 text-center'>
           <div><h1 className='text-4xl font-bold' >Our Teams</h1></div>
 
@@ -29,7 +17,7 @@ const Teams = () => {
             </div>
           </div>
 
-        </div>
+        </div>        
       </div>
     </>
   )

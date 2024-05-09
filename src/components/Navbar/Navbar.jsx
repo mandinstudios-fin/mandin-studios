@@ -1,92 +1,88 @@
-import React, {useState} from 'react'
-import mdlogo from '../../assets/images/logo-01.svg'
-import { IoChevronDownSharp } from "react-icons/io5";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { delay, motion } from 'framer-motion'
+import React, {useEffect, useState} from 'react'
+import { Link } from 'react-router-dom'
+
+import mdlogo from '../../assets/images/mdlogo.svg'
+import menu from '../../assets/images/menu.svg'
+import { ChevronDownIcon } from '@heroicons/react/24/solid'
+import gsap from 'gsap'
 
 const Navbar = () => {
-    const [isArrowUp, setIsArrowUp] = useState(false);
+    const [servicesArrow, setServicesArrow] = useState(false)
+    const [procuctsArrow, setProductsArrow] = useState(false)
 
-    const changeArrow = () => {
-        setIsArrowUp(prev => !prev)
+
+
+    const changeServicesArrow = () => {
+        console.log("YO")
+        gsap.fromTo(".serviceCard", {
+            y: '-100%',
+            opacity: 0
+        }, {
+            y: 0,
+            opacity: 1,
+            stagger: 1,
+            ease: "power1"
+        })
     }
 
-    const containerVariants = {
-        hidden: {
-            y: '-100vh'
-        },
-        visible: {
-            y: 0,
-            transition: {
-                duration: 0.9,
-                ease: "easeInOut",
-                staggerChildren: 0.67, 
-          }
-        },
-        exit: {
-            y: '-100vh',
-            transition: {
-                duration: 0.7
-            }
-        }
-    };
-      
-    // Variants for individual children
-    const childVariants = {
-    hidden: { opacity: 0, y: -100 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeInOut" } }
-    };
+    const changeProductsArrow = () => {
+
+    }
 
   return (
     <>
-        <div className='relative'>
-            <nav className='flex justify-around'>
-                <div className=''>
-                    <img src={mdlogo} className='h-[200px] w-auto -mt-10'/>    
+        <div className='relative z-30'>
+            <nav className='flex justify-between mx-3 tablet:mx-8 laptop:mx-3 laptop:mt-8'>
+                <div>
+                    <img src={mdlogo}  className='h-[120px] tablet:h-[170px] laptop:h-[200px] w-auto laptop:-mt-10'/>    
                 </div>
                 
                 <div>
-                    <ul className='hidden laptop:flex md:justify-around mt-10'>
-                        <li onClick={changeArrow}>
-                            <p className='cursor-pointer inline mr-1'>services</p>
-                            <motion.span animate={{ rotate: isArrowUp ? 180 : 0 }} transition={{duration: 0.3}} className='inline-block'>
-                                <IoChevronDownSharp/>
-                            </motion.span>
+                    <ul className='hidden laptop:flex laptop:gap-7 mt-7'>
+                        <li onClick={changeServicesArrow} className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
+                            Services <span id='serviceIcon'><ChevronDownIcon className='w-4 h-4 inline-block mb-1'/></span>
+                        </li>
 
-                            {isArrowUp &&
-                                <motion.div className='absolute top-28 left-0 w-full' initial="hidden" animate="visible" variants={containerVariants}>
-                                    <motion.div className='w-full h-[500px] bg-primary text-center'>
-                                    <motion.div>
-                                        <motion.div>
-                                        <motion.div className='flex gap-4 py-[28px] justify-center'>
-                                            <motion.div variants={childVariants} className='h-[450px] w-[380px] border border-[#3F3F3F] rounded-2xl flex justify-center items-center hover:y-2'>
-                                            <p className='text-5xl font-bold'>FinTech</p>
-                                            </motion.div>
-                                            <motion.div variants={childVariants} className='h-[450px] w-[380px] border border-[#3F3F3F] rounded-2xl flex justify-center items-center hover:y-2'>
-                                            <p className='text-5xl font-bold'>Web Development</p>
-                                            </motion.div>
-                                            <motion.div variants={childVariants} className='h-[450px] w-[380px] border border-[#3F3F3F] rounded-2xl flex justify-center items-center hover:y-2'>
-                                            <p className='text-5xl font-bold'>Cyber Security</p>
-                                            </motion.div>
-                                        </motion.div>
-                                        </motion.div>
-                                    </motion.div>
-                                    </motion.div>
-                              </motion.div>
-                            }
+                        <li onClick={changeProductsArrow} className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
+                            Products <span id='productIcon'><ChevronDownIcon className='w-4 h-4 inline-block mb-1'/></span>
+                        </li>
+
+                        <li className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
+                            About <span></span>
+                        </li>
+
+                        <li className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
+                            <Link to={'/contact'}>Contact</Link> <span></span>
                         </li>
                     </ul>
-                    
-                    <div className='laptop:hidden mt-12 mx-auto laptop:-mr-32'>
-                        <RxHamburgerMenu size={30}/>
+                </div>
+
+                <div className='laptop:hidden w-8 tablet:w-12 my-auto laptop:-mr-32 mx-8 text-right'>
+                    <img src={menu} />
+                </div>
+
+                <div className='hidden laptop:block mt-7'>
+                    <button className=' bg-[#385584] text-white font-medium px-6 py-2 text-sm rounded-full whitespace-nowrap'>Onln Coin Live</button>
+                </div>
+
+                {/* Cards */}
+                <div className='hidden absolute z-10 serviceCard h-[74vh] w-full bg-[#f5f5f5]'>
+                </div>
+
+                {/* Service Cards */}
+                <div className='absolute z-20 serviceCard h-[70vh] w-full'>
+                    <div className='flex gap-5 justify-between h-full w-full p-20 bg-primary'>
+                        <div className='w-1/3 py-60  gap-5 border border-[#358584] rounded-3xl text-center'><h1>FinTech</h1></div>
+                        <div className='w-1/3 py-60  gap-5 border border-[#358584] rounded-3xl text-center'><h1>Web Development</h1></div>
+                        <div className='w-1/3 py-60 border border-[#358584] rounded-3xl text-center'><h1>Cyber Security</h1></div>
                     </div>
                 </div>
 
-                <div>
-                    <button className='hidden laptop:block bg-[#A2B3D4] p-3 py-1 rounded-full mt-10'>Onln Coin Live</button>
-                </div>
-
             </nav>
+            {/* Tablet and Mobile Navigation */}
+            <div>
+
+            </div>
         </div>
     </>
   )

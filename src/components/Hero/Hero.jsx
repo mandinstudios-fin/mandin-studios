@@ -5,8 +5,7 @@ import banner from '../../assets/images/banner-02.svg'
 const Hero = () => {
     useEffect(() => {
         const taglineAmination = gsap.timeline();
-        const topAnimation = gsap.timeline();
-        const bottomAnimation = gsap.timeline();
+        const tagsAnimation = gsap.timeline();
 
         taglineAmination.fromTo('.heading h1', {
             y: 100,
@@ -20,7 +19,7 @@ const Hero = () => {
             yoyo: true
         })
 
-        topAnimation.fromTo('h3', {
+        tagsAnimation.fromTo('h3', {
             y: 100,
             opacity: 0
         }, {
@@ -28,27 +27,18 @@ const Hero = () => {
             opacity: 1,
             ease: 'power4.out',
             duration: 1,
-            delay: 1
+            delay: 1.2,
+            stagger: 0.3
         })
 
-        bottomAnimation.fromTo('h3', {
-            y: 100,
-            opacity: 0
-        }, {
-            y: 0,
-            opacity: 1,
-            ease: 'power4.out',
-            duration: 1,
-            delay: 1
-        })
     })
 
   return (
     <>
-        <div className='flex flex-col laptop:flex-row justify-center items-center'>
+        <div className='flex flex-col laptop:flex-row justify-between items-center laptop:mx-12'>
             <div className="laptop:ml-12 laptop:mr-12">
                 <div>
-                    <h3 className=''>We make Digital and Simple</h3>
+                    <h3>We make Digital and Simple</h3>
                 </div>
 
                 <div className='text-left font-extrabold'>
@@ -64,11 +54,11 @@ const Hero = () => {
                 </div>
 
                 <div>
-                    <h3 className=''>Let's work together</h3>
+                    <h3>Let's work together</h3>
                 </div>
             </div>
 
-            <div className='w-[380px] mt-12 tablet:mt-0 laptop:mt-0 desktop:mt-0 tablet:w-[650px] laptop:w-[800px] laptop:mr-12'>
+            <div className='w-[380px] mt-12 tablet:mt-0 laptop:mt-0 desktop:mt-0 tablet:w-[650px] laptop:w-[900px] laptop:mr-12'>
                 <img src={banner} className='hover:scale-110 transition-all duration-700'/>
             </div>
         </div>

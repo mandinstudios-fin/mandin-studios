@@ -6,6 +6,7 @@ import SubFoooter from './SubFoooter';
 const Contact = () => {
 
   useEffect(() => {
+    
     gsap.fromTo('.contactheading1', {
       x: '40%', 
       opacity: 0
@@ -33,17 +34,19 @@ const Contact = () => {
 
   return (
     <>
-      <div className='mx-8 tablet:mx-36 laptop:mx-56 bg-white pb-32'>
-        <div className=' '>
+      <div className='contactbody mx-8 tablet:mx-16 laptop:mx-28 bg-white pb-32 overflow-hidden'>
+        <div className='mt-4 laptop:mt-12'>
             <div>
-              <div className='contactheading1'><h1 className='text-[#385584] font-semibold text-2xl laptop:text-7xl tracking-widest pl-8 laptop:pl-28 laptop:mb-3'>Let's develop your</h1></div>
-              <div className='contactheading2'><h1 className='text-[#A2B3D4] font-semibold text-2xl laptop:text-7xl tracking-widest'>business intelligence</h1></div>
+              <div className='contactheading1'><h1 className='text-[#385584] font-semibold text-2xl tablet:text-5xl laptop:text-7xl tracking-widest pl-6 laptop:pl-36 laptop:mb-3'>Let's develop your</h1></div>
+              <div className='contactheading2'><h1 className='text-[#A2B3D4] font-semibold text-2xl tablet:text-5xl laptop:text-7xl tracking-widest whitespace-nowrap'>business intelligence</h1></div>
             </div>
 
             <Form />
             <SubFoooter />
         </div>
       </div>
+
+      <div className='w-full h-72 bg-primary'></div>
         
     </>
   )

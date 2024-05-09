@@ -30,8 +30,8 @@ const SubFoooter = () => {
 
   return (
     <div>
-        <div className='bg-[#f5f5f5] text-[#A2B3D4] text-xl tablet:text-2xl laptop:text-5xl tracking-wide'>
-            <div ref={divRef} className='tags text-center py-24'>
+        <div className='mt-16 bg-[#f5f5f5] text-[#A2B3D4] rounded-2xl text-xl tablet:text-2xl laptop:text-5xl tracking-wide'>
+            <div ref={divRef} className='tags text-center py-20'>
                 <div className='subtag1'><span>In order to make <span className='text-[#385584]'>good business</span></span></div>
                 <div className='subtag2 mt-2'><span>decisions <span>at the </span>right time,</span></div>
                 <div className='subtag3 mt-2'><span>we rely on the <span className='text-[#385584]'>right talent</span></span></div>
