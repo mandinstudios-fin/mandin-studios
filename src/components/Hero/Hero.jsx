@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap';
 import banner from '../../assets/images/banner-02.svg'
+import { useGSAP } from '@gsap/react';
 
 const Hero = () => {
-    useEffect(() => {
+
+    useGSAP(() => {
         const taglineAmination = gsap.timeline();
         const tagsAnimation = gsap.timeline();
 
@@ -14,7 +16,7 @@ const Hero = () => {
             y: 0,
             opacity: 1,
             ease: 'power4.out',
-            duration: 1.2,
+            duration: 1.4,
             stagger: 0.5,
             yoyo: true
         })
@@ -28,15 +30,15 @@ const Hero = () => {
             ease: 'power4.out',
             duration: 1,
             delay: 1.2,
-            stagger: 0.3
+            stagger: 0.5
         })
 
     })
 
   return (
     <>
-        <div className='flex flex-col laptop:flex-row justify-between items-center laptop:mx-12'>
-            <div className="laptop:ml-12 laptop:mr-12">
+        <div className='flex flex-col laptop:flex-row justify-between items-center laptop:mx-24 laptop:mr-36'>
+            <div className="max-w-[50%]">
                 <div>
                     <h3>We make Digital and Simple</h3>
                 </div>
@@ -58,7 +60,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className='w-[380px] mt-12 tablet:mt-0 laptop:mt-0 desktop:mt-0 tablet:w-[650px] laptop:w-[900px] laptop:mr-12'>
+            <div className='max-w-[50%]'>
                 <img src={banner} className='hover:scale-110 transition-all duration-700'/>
             </div>
         </div>

@@ -45,8 +45,6 @@ const Contact = () => {
             <SubFoooter />
         </div>
       </div>
-
-      <div className='w-full h-72 bg-primary'></div>
         
     </>
   )

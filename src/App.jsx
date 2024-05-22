@@ -4,7 +4,6 @@ import { Navbar, Contact, Main } from './components/index'
 import gsap from 'gsap'
 
 function App() {
-
   return (
     <>
       <Navbar />
