@@ -22,7 +22,7 @@ const TeamsCard = ({team}) => {
                   scrub: true,
               },
           })
-          .to(text.current, {y: -100}, 0);
+          .to(text.current, {y: -120}, 0);
       }
   });
     return () => context.revert();

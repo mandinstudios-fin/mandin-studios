@@ -51,7 +51,7 @@ const Navbar = () => {
                     
                     <div>
                         <ul className='hidden laptop:flex laptop:gap-7 pt-9'>
-                            <li onClick={changeServicesArrow} className='font-medium text-[#192D47] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
+                            <li onClick={changeServicesArrow} className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
                                 Services <span id='serviceIcon'><ChevronDownIcon className='w-4 h-4 inline-block mb-1'/></span>
                             </li>
 
