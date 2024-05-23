@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import { useTransform } from 'framer-motion'
 
-const AboutServicesCard = ({ about }) => {
-    const { title, description, image } = about;
+const AboutServicesCard = ({ title, description, image, i, progress, range, targetScale }) => {
+    const scale = useTransform(progress, range, [1, targetScale]);
 
     return (
-        <div className='card sticky mb-20'>
-            <div className='laptop:w-[900px] h-auto flex flex-col tablet:flex-row mx-auto border bg-white'>
+        <div className='sticky top-96 tablet:top-56 laptop:top-96'>
+            <div className='relative laptop:w-[900px] h-auto flex flex-col tablet:flex-row mx-auto border bg-white' style={{top:`calc(-5vh + ${i * 25}px)`}}>
                 <div className='tablet:w-2/3 text-left p-8 laptop:pl-11 laptop:py-20 laptop:my-auto'>
                     <div><h1 className='text-3xl font-bold mb-7'>{title}</h1></div>
                     <div><p>{description}</p></div>
