@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Navbar, Contact, Main } from './components/index'
+import { Navbar, Contact, Main, Footer } from './components/index'
 import FollowUs from './components/FollowUs/FollowUs'
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
         <Route path='/' element={<Main />}/>
         <Route path='/contact' element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   )
 }

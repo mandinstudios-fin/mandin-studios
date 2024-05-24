@@ -37,7 +37,11 @@ const Navbar = () => {
     }
 
     const mouseLeaveFunction = () => {
-        // setServicesArrow(false)
+        setServicesArrow(false)
+    }
+
+    const scrollToAbout = () => {
+        document.getElementById("about").scrollIntoView({ behavior: "smooth", block: "nearest" });
     }
 
   return (
@@ -45,9 +49,10 @@ const Navbar = () => {
         <div id='navbar' className='top-0 sticky z-50 border-b border-[#385584]/10 backdrop-blur-sm'>
             <div className='relative' onMouseLeave={mouseLeaveFunction}>
                 <nav className='flex justify-between mx-3 tablet:mx-8 laptop:mx-16 laptop:pt-8' >
-                    <div className='w-[20%] -mt-10'>  
-                        <img src={mdlogo}/>    
+                    <div className='w-[50%] laptop:w-[20%]'>
+                        <img src={mdlogo} className='laptop:-mt-10'/>
                     </div>
+
                     
                     <div>
                         <ul className='hidden laptop:flex laptop:gap-7 pt-9'>
@@ -59,7 +64,7 @@ const Navbar = () => {
                                 Products <span id='productIcon'><ChevronDownIcon className='w-4 h-4 inline-block mb-1'/></span>
                             </li>
 
-                            <li className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
+                            <li onClick={scrollToAbout} className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
                                 About <span></span>
                             </li>
 
@@ -69,7 +74,7 @@ const Navbar = () => {
                         </ul>
                     </div>
 
-                    <div className='laptop:hidden w-8 tablet:w-12 my-auto laptop:-mr-32 mx-8 text-right'>
+                    <div className='laptop:hidden w-8 tablet:w-12 my-auto laptop:-mr-32 text-right'>
                         <img src={menu} />
                     </div>
 

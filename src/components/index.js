@@ -5,5 +5,6 @@ import Services from "./Services/Services";
 import Teams from "./Teams/Teams";
 import Contact from "./Contact/Contact";
 import Main from './Main'
+import Footer from './Footer/Footer'
 
-export {Navbar, Hero, About, Services, Teams, Contact, Main}
+export {Navbar, Hero, About, Services, Teams, Contact, Main, Footer}

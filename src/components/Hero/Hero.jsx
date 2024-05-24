@@ -38,7 +38,7 @@ const Hero = () => {
   return (
     <>
         <div className='flex flex-col laptop:flex-row justify-between items-center laptop:mx-24 laptop:mr-36'>
-            <div className="max-w-[50%]">
+            <div className="">
                 <div>
                     <h3>We make Digital and Simple</h3>
                 </div>
@@ -60,7 +60,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className='max-w-[50%]'>
+            <div className='laptop:-mt-12'>
                 <img src={banner} className='hover:scale-110 transition-all duration-700'/>
             </div>
         </div>

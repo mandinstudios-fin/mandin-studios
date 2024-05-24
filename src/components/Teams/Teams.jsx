@@ -12,7 +12,7 @@ const TeamsCard = ({team}) => {
 
   useLayoutEffect(() => {
     const context = gsap.context(() => {
-      const isMobile = window.matchMedia("(max-width: 767px)").matches; // Check if it's a mobile screen
+      const isMobile = window.matchMedia("(max-width: 767px)").matches; 
       if (!isMobile) {
           const tl = gsap.timeline({
               scrollTrigger: {
@@ -22,7 +22,7 @@ const TeamsCard = ({team}) => {
                   scrub: true,
               },
           })
-          .to(text.current, {y: -120}, 0);
+          .fromTo(text.current, {y: 40}, {y: -120}, 0);
       }
   });
     return () => context.revert();
@@ -31,7 +31,7 @@ const TeamsCard = ({team}) => {
 return (
   <div >
       <div ref={container} className="flex tablet:flex-row flex-col tablet:justify-center border tablet:border-0" >
-          <div ref={text} className="tablet:w-[470px] laptop:w-[600px] tablet:h-auto tablet:mt-4 p-8 tablet:p-12 tablet:-ml-80 laptop:-ml-96 text-left bg-white block tablet:relative tablet:z-10 tablet:drop-shadow-2xl border">
+          <div ref={text} className="tablet:w-[470px] laptop:w-[600px] tablet:h-auto tablet:mt-4 p-8 tablet:p-12 tablet:-ml-80 laptop:-ml-96 text-left bg-white rounded-md block tablet:relative tablet:z-10 tablet:drop-shadow-2xl border">
             <div><h1 className='text-3xl font-bold mb-7'>{title}</h1></div>
             <div><p className='tracking-wide'>{description}</p></div>
           </div>

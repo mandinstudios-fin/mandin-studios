@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         primary: "#A2B3D4",
-        secondary: ""
+        secondary: "#385584",
+        "fadedwhite": "#f5f5f5"
       }
     },
     screens: {

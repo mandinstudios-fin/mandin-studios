@@ -50,7 +50,7 @@ const Form = () => {
 
   return (
     <div className='text-[#385584] pb-12'>
-        <div className='contact mt-12 mb-12'>
+        <div className='contact py-8'>
             <div><p className='font-semibold laptop:text-2xl'>Contact Form</p></div>
         </div>
 
@@ -74,25 +74,25 @@ const Form = () => {
             <div className='laptop:flex mt-2'>
                 <div className='laptop:w-1/2 laptop:mr-2'>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-2xl laptop:ml-4 bg-transparent focus:outline-none ' placeholder='Name*'/>
+                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-xl laptop:ml-4 bg-transparent focus:outline-none ' placeholder='Name*'/>
                     </div>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-2xl laptop:ml-4 bg-transparent focus:outline-none ' placeholder='Email*'/>
+                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-xl laptop:ml-4 bg-transparent focus:outline-none ' placeholder='Email*'/>
                     </div>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-2xl laptop:ml-4 bg-transparent focus:outline-none' placeholder='Message*'/>
+                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-xl laptop:ml-4 bg-transparent focus:outline-none' placeholder='Message*'/>
                     </div>
                 </div>
 
                 <div className='laptop:w-1/2 laptop:ml-2'>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-2xl laptop:ml-4 bg-transparent focus:outline-none ' placeholder='Last Name*'/>
+                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-xl laptop:ml-4 bg-transparent focus:outline-none ' placeholder='Last Name*'/>
                     </div>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-2xl laptop:ml-4 bg-transparent focus:outline-none ' placeholder='Phone No.*'/>
+                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-xl laptop:ml-4 bg-transparent focus:outline-none ' placeholder='Phone No.*'/>
                     </div>
                     <div className='border-b border-[#385584] py-7'>
-                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-2xl laptop:ml-4 bg-transparent focus:outline-none ' placeholder={`I'm looking for help with*`}/>
+                        <input type='text' className='w-[97%] text:md tablet:text-lg laptop:text-xl laptop:ml-4 bg-transparent focus:outline-none ' placeholder={`I'm looking for help with*`}/>
                     </div>
                 </div>
             </div>
