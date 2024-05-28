@@ -22,39 +22,39 @@ export const whatwedo = [
     {
         title: "Talent Development",
         description: "At MD Studios, we believe in nurturing the next generation of visionaries. Our talent development program is designed to cultivate creativity, ignite passion, and inspire innovation. From interns to seasoned professionals, we provide opportunities for growth and learning.",
-        image: ""
+        image: "https://mdstudios.s3.ap-south-1.amazonaws.com/Talent+Development.jpg"
     },
     {
         title: "Interactive Strategies",
         description: "At MD Studios, we specialize in crafting interactive strategies that captivate audiences and drive results. From immersive experiences to dynamic campaigns, we leverage the latest technologies to engage users on every level. Our approach is rooted in innovation, combining creativity with strategic thinking to deliver impactful solutions.",
-        image: ""
+        image: "https://mdstudios.s3.ap-south-1.amazonaws.com/Interactive+Strategies.jpg"
     },
     {
         title: "Values",
         description: "At MD Studios, our values are more than just words – they're the guiding principles behind everything we do. Integrity, innovation, and collaboration are at the heart of our culture, driving us to push boundaries and exceed expectations. We believe in transparency, accountability, and respect, fostering a culture of trust and empowerment.",
-        image: ""
+        image: "https://mdstudios.s3.ap-south-1.amazonaws.com/Values.jpg"
     },
     {
         title: "Viable Mindset",
         description: "At MD Studios, we understand that success isn't just about talent or resources; it's about mindset. That's why we're dedicated to cultivating a viable mindset that empowers visionaries to thrive. Through a culture of adaptability, resilience, and innovation, we equip individuals with the tools they need to navigate challenges and seize opportunities. ",
-        image: ""
+        image: "https://mdstudios.s3.ap-south-1.amazonaws.com/Viable+Mindset.jpg"
     }
 ]
 
 export const teams = [
     {
         title: "MDS Operations Team",
-        image: "",
-        description: "Our teams are structured as a cohesive unit to thoroughly understand your program at every level, serving you and your relocating families with unparalleled support. We invite you to discover the NEI difference!"
+        image: "https://mdstudios.s3.ap-south-1.amazonaws.com/Operations.jpg",
+        description: "Our Operations Team is the heartbeat of MDS, ensuring smooth and efficient execution of all our business activities. We streamline processes, maintain quality control, manage resources effectively, and drive continuous improvement. With a focus on operational excellence, our team guarantees that MDS consistently delivers top-tier results. Committed to precision and reliability, the Operations Team is dedicated to optimizing performance and supporting our growth."
     },
     {
         title: "MDS Information Technology",
-        image: "",
-        description: "Constantly innovating to enhance human interactions with digital solutions that make activities faster and easier, NEI's Information Technology team makes use of the most advanced technology tools for analytics, automated workflows, and process efficiencies."
+        image: "https://mdstudios.s3.ap-south-1.amazonaws.com/Technology.png",
+        description: "The MDS Information Technology team is at the forefront of technological innovation, providing robust IT infrastructure and advanced systems. We prioritize cybersecurity, deploy cutting-edge solutions, and offer dedicated tech support. Our focus on continuous innovation ensures MDS stays ahead in the digital landscape. By safeguarding data and developing custom tech solutions, our IT team empowers the entire organization to achieve excellence."
     },
     {
         title: "Client Development",
-        image: "",
-        description: "As NEI's Client Development team members learn about your company culture, program, and talent agility goals, they are able to share how NEI could improve your company's overall mobility program experience. Let's start the relationship today!"
+        image: "https://mdstudios.s3.ap-south-1.amazonaws.com/Client-development.jpg",
+        description: "At MDS, our clients are our top priority. The Client Development team builds strong, lasting relationships by understanding unique client needs and offering tailored solutions. We work as strategic partners, engaging proactively and providing exceptional service. Our commitment to client success drives us to deliver unparalleled support, ensuring that our clients thrive and achieve their goals with MDS by their side."
     }
 ]

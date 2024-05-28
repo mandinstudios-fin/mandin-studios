@@ -9,6 +9,7 @@ const TeamsCard = ({team}) => {
   const { title, image, description } = team;
   const container = useRef(null);
   const text = useRef(null)
+  const imageRef = useRef(null)
 
   useLayoutEffect(() => {
     const context = gsap.context(() => {
@@ -22,7 +23,7 @@ const TeamsCard = ({team}) => {
                   scrub: true,
               },
           })
-          .fromTo(text.current, {y: 40}, {y: -120}, 0);
+          .fromTo([text.current], {y: 40}, {y: -120}, 0);
       }
   });
     return () => context.revert();
@@ -30,13 +31,13 @@ const TeamsCard = ({team}) => {
 
 return (
   <div >
-      <div ref={container} className="flex tablet:flex-row flex-col tablet:justify-center border tablet:border-0" >
-          <div ref={text} className="tablet:w-[470px] laptop:w-[600px] tablet:h-auto tablet:mt-4 p-8 tablet:p-12 tablet:-ml-80 laptop:-ml-96 text-left bg-white rounded-md block tablet:relative tablet:z-10 tablet:drop-shadow-2xl border">
+      <div ref={container} className="flex tablet:flex-row flex-col tablet:justify-center border-0" >
+          <div ref={text} className="tablet:w-[470px] laptop:w-[600px] tablet:h-auto tablet:mt-4 p-8 tablet:p-12 tablet:-ml-80 laptop:-ml-96 text-left bg-white/70 rounded-md block tablet:relative tablet:z-10 tablet:drop-shadow-2xl border">
             <div><h1 className='text-3xl font-bold mb-7'>{title}</h1></div>
-            <div><p className='tracking-wide'>{description}</p></div>
+            <div><p className='tracking-wide text-justify'>{description}</p></div>
           </div>
-          <div className="tablet:w-[500px] laptop:w-[680px] h-80 -mt-4 bg-white block tablet:absolute tablet:ml-72">
-            <img src={image}/>
+          <div ref={imageRef} className="tablet:w-[500px] laptop:w-[680px] h-80 -mt-4 block tablet:absolute tablet:ml-[30vw]">
+            <img src={image} style={{backgroundSize: 'cover'}} className='rounded-md drop-shadow-2xl'/>
           </div>
       </div>
   </div>

@@ -14,21 +14,21 @@ const About = () => {
 
   return (
     <>
-        <div className='relative z-10 mt-32 text-center pb-36 overflow-y-clip'>
+        <div className='relative z-10 mt-32 text-center pb-16 overflow-y-clip'>
             <div ref={svgRef} className='absolute w-full'>
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     viewBox="0 0 100 100" 
-                    style={{ width: '100%', height: '100%' }}
+                    preserveAspectRatio="none"
+                    className='block w-full h-auto'
                 >
                     <polygon points="0,100 100,0 100,100" fill="lightblue" opacity={0.5}/>
-                    <line x1="100" y1="0" />
+                    <line x1="100" y1="0" x2="100" y2="0" stroke="black" strokeWidth="1"/>
                 </svg>
             </div>
 
-
             <div ref={container} className='mt-32 '>
-                <div className='sticky top-20 tablet:top-28 laptop:top-56'>
+                <div className='sticky top-32 tablet:top-56 laptop:top-56'>
                     <div className='inline-block'><h1 className='text-4xl md:text-6xl font-bold laptop:mr-2'>How We Do </h1></div>
                     <div className='inline-block'><h1 className='text-4xl md:text-6xl font-bold '>What We Do </h1></div>
                 </div>
@@ -40,10 +40,7 @@ const About = () => {
                             <AboutServicesCard 
                                 {...about}
                                 key={index} 
-                                i={index} 
-                                progress={scrollYProgress} 
-                                range={[index * 0.25, 1]}
-                                targetScale={1 - (whatwedo.length - index) * 0.05}
+                                i={index}
                             />
                         ))
                     }

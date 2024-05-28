@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { gsap } from 'gsap';
 
 const Form = () => {
@@ -63,7 +63,7 @@ const Form = () => {
 
                 <div className='laptop:text-right laptop:mt-0 mt-4'>
                     <div className='inline-block laptop:text-right'>
-                        <p className='laptop:text-right font-medium laptop:text-2xl'>info@mandinstudios.com</p>
+                        <p className='laptop:text-right font-medium laptop:text-2xl'><Link to={'mailto:info@mandinstudios.com'}>info@mandinstudios.com</Link></p>
                     </div>
                 </div>
             </div>
