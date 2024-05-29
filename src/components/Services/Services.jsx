@@ -14,7 +14,7 @@ const About = () => {
 
   return (
     <>
-        <div className='relative z-10 mt-32 text-center pb-16 overflow-y-clip'>
+        <div className='relative z-10 mt-72 text-center pb-16 overflow-y-clip'>
             <div ref={svgRef} className='absolute w-full'>
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 

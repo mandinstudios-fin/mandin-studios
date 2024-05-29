@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { CiMapPin } from "react-icons/ci";
 import footerbg from '../../assets/images/footerbg.png'
+import mdlogowhite from '../../assets/images/mdlogowhite.png'
 
 const FooterContent = () => {
   const Nav = () => {
@@ -15,9 +16,7 @@ const FooterContent = () => {
 
             <div className='flex flex-col gap-2 text-[#f5f5f5]/80'>
                 <p><NavLink to={`/`}>Home</NavLink></p>
-                <p><NavLink to={`/`}>Services</NavLink></p>
                 <p><NavLink to={`/`}>Products</NavLink></p>
-                <p><NavLink to={`/`}>About</NavLink></p>
                 <p><NavLink to={`/contact`}>Contact Us</NavLink></p>
             </div>
 
@@ -31,8 +30,8 @@ const FooterContent = () => {
   }
   return (
       <div className='bg-[#002B55] h-full w-full flex flex-col justify-center items-center' style={{backgroundImage: `url(${footerbg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
-        <div className='w-[50%] laptop:w-[30%]'>
-          <img src={'https://mdstudios.s3.ap-south-1.amazonaws.com/mdlogowhite.svg'}/>
+        <div className='mb-12 w-[50%] tablet:w-[40%] laptop:w-auto'>
+          <img src={mdlogowhite}/>
         </div>
         <Nav />
       </div>

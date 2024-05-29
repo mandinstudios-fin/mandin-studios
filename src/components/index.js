@@ -8,5 +8,7 @@ import Main from './Main'
 import Footer from './Footer/Footer'
 
 import WebDevelopment from "./Service/WebDevelopment/WebDevelopment";
+import Fintech from './Service/Fintech/Fintech'
+import CyberSecurity from "./Service/Cyber Security/CyberSecurity";
 
-export {Navbar, Hero, About, Services, Teams, Contact, Main, Footer, WebDevelopment}
+export {Navbar, Hero, About, Services, Teams, Contact, Main, Footer, WebDevelopment, Fintech, CyberSecurity}

@@ -1,3 +1,10 @@
+import fintechAnimation from '../assets/images/fintechanimation.json'
+import webdevanimation from '../assets/images/webdevanimation.json'
+import cyberanimation from '../assets/images/cyberanimation.json'
+import webAnimationMainPage from '../assets/images/webdevAnimationMainPage.json'
+import fintechAnimationMainPage from '../assets/images/fintechAnimationMainPage.json'
+import cyberAnimationMainPage from '../assets/images/cyberAnimationMainPage.json'
+
 export const navLinks = ["services", "products", "about", "contact"]
 
 export const aboutServices = [
@@ -58,3 +65,33 @@ export const teams = [
         description: "At MDS, our clients are our top priority. The Client Development team builds strong, lasting relationships by understanding unique client needs and offering tailored solutions. We work as strategic partners, engaging proactively and providing exceptional service. Our commitment to client success drives us to deliver unparalleled support, ensuring that our clients thrive and achieve their goals with MDS by their side."
     }
 ]
+
+export const animations = [fintechAnimation, webdevanimation, cyberanimation]
+
+export const ServicesMainPages = {
+    fintech: {
+        title: "Fintech",
+        animation: fintechAnimationMainPage,
+        description: "Transform your financial services with our innovative FinTech solutions. We develop comprehensive banking solutions, digital currency platforms, cryptocurrency applications, and cutting-edge payment gateways. Our expertise in neo banking ensures that you stay ahead of the curve in the ever-evolving financial landscape.",
+        tagline: "Empowering Finance, Transforming Futures"
+    },
+    webdevelopment: {
+        title: "Web Development",
+        animation: webAnimationMainPage,
+        description: "Empower your online presence with our top-notch web development services. From stunning websites to dynamic web applications, we deliver tailored solutions that captivate your audience and drive results. Let us turn your ideas into reality in the digital realm.",
+        tagline: "Elevating Your Online Presence, One Pixel at a Time"
+    },
+    cybersecurity: {
+        title: "Cyber Security",
+        animation: cyberAnimationMainPage,
+        description: "Protect your organization with our top-tier cybersecurity services. We specialize in custom security solutions, implementing a zero-trust strategy and conducting regular penetration testing to ensure your network and applications are secure. In an increasingly connected world, our experts work tirelessly to identify and address vulnerabilities, keeping your business safe and secure.",
+        tagline: "Protecting Your Digital Frontier, Securing Your Peace of Mind"
+    },
+    socialmediamarketing: {
+        title: "Social Media Marketing",
+        animation: webAnimationMainPage,
+        description: "Maximize your online presence with our state-of-the-art social media marketing services. We leverage the latest AI technologies and cutting-edge marketing strategies to boost your brand's visibility and engagement across all social media platforms. From content creation to targeted ad campaigns, we provide comprehensive solutions tailored to your needs.",
+        tagline: "Connecting Brands, Amplifying Voices, Igniting Engagement"
+    },
+    
+};
