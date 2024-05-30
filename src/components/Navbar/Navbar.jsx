@@ -82,8 +82,8 @@ const Navbar = () => {
                                <Link to={`/products`}>Products</Link>
                             </li>
 
-                            <li onClick={scrollToAbout} className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
-                                About
+                            <li className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
+                                <Link to={`/about`}>About</Link>
                             </li>
 
                             <li onClick={handleContact} className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
@@ -137,21 +137,21 @@ const Navbar = () => {
                         <motion.div initial={{ y: "-100vh" }} animate={{ y: 0 }} exit={{y: "-100vh", opacity: 0}} transition={{ type: "spring", stiffness: 100, damping: 20 }} className='serviceCardPhone laptop:hidden bg-primary absolute z-10 w-full h-auto overflow-y-visible pb-32'>
                             <div className='h-auto w-full mx-auto p-5 bg-primary overflow-hidden grid gap-5 justify-center grid-cols-2 tablet:grid-cols-3'>
                                 <motion.div initial={{ y: "-15vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-15vh", opacity: 0 }} transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.6 }} className='serviceCards p-4 w-auto border border-[#358584] rounded-lg text-center text-2xl cursor-pointer'>
-                                    <Link to={`/fintech`} onClick={handleBurgerMenu}>
+                                    <Link to={`/services/fintech`} onClick={handleBurgerMenu}>
                                         <h1 className='text-left'>Fintech</h1>
                                         <Lottie animationData={fintechAnimation} loop={true} />
                                     </Link>
                                 </motion.div>
 
                                 <motion.div initial={{ y: "-15vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-15vh", opacity: 0 }} transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.7 }} className='serviceCards p-4 w-auto border border-[#358584] rounded-lg text-center text-2xl cursor-pointer'>
-                                    <Link to={`/webdevelopment`} onClick={handleBurgerMenu}>
+                                    <Link to={`/services/webdevelopment`} onClick={handleBurgerMenu}>
                                         <h1 className='text-justify'>Web Development</h1>
                                         <Lottie animationData={webdevAnimation} loop={true} />
                                     </Link>
                                 </motion.div>
 
                                 <motion.div initial={{ y: "-15vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-15vh", opacity: 0 }} transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.8 }} className='serviceCards p-4 w-auto border border-[#358584] rounded-lg text-center text-2xl cursor-pointer'>
-                                    <Link to={`/cybersecurity`} onClick={handleBurgerMenu}>
+                                    <Link to={`/services/cybersecurity`} onClick={handleBurgerMenu}>
                                         <h1 className='text-justify'>Cyber Security</h1>
                                         <Lottie animationData={cyberAnimation} loop={true} />
                                     </Link>
@@ -166,7 +166,7 @@ const Navbar = () => {
                                     <motion.p className='mobileNaviItems mb-2 ml-2 cursor-pointer' initial={{ x: -10, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 1.2 }}><Link to={`/products`} onClick={handleBurgerMenu}>Products</Link></motion.p>
                                     <motion.div className='mobileNavItemsBottom h-[1px] bg-black' initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ delay: 1.2 }}/>
 
-                                    <motion.p className='mobileNaviItems mb-2 ml-2 cursor-pointer' initial={{ x: -10, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 1.3 }} onClick={handleBurgerMenu}>About</motion.p>
+                                    <motion.p className='mobileNaviItems mb-2 ml-2 cursor-pointer' initial={{ x: -10, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 1.3 }}><Link to={`/about`} onClick={handleBurgerMenu}>About</Link></motion.p>
                                     <motion.div className='mobileNavItemsBottom h-[1px] bg-black' initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ delay: 1.2 }}/>
 
                                     <motion.p className='mobileNaviItems mb-2 ml-2 cursor-pointer' initial={{ x: -10, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 1.4 }}><Link to={`/contact`} onClick={handleBurgerMenu}>Contact</Link></motion.p>

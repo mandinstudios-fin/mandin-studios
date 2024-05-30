@@ -3,6 +3,7 @@ import Lottie from 'lottie-react';
 import { ServicesMainPages } from '../../../assets/index'
 import gsap from 'gsap';
 import { MdOutlineArrowOutward } from "react-icons/md";
+import fintechAnimationMainPage from '../../../assets/images/fintechAnimationMainPage.json'
 
 const Fintech = () => {
     const { title, animation, description } = ServicesMainPages["fintech"]
@@ -29,7 +30,7 @@ const Fintech = () => {
             <h1 className='firstRef text-left text-4xl laptop:text-5xl font-bold'>{title}</h1>
             <p className='firstRef text-justify mt-8 laptop:mt-12'>{description}</p>
             </div>
-            <div className='firstRef laptop:w-[50%] text-center mt-12 laptop:mt-0'>
+            <div className='firstRef laptop:w-[50%] text-center mt-12'>
                 <Lottie animationData={animation} loop={true}/>
             </div>
         </div>
@@ -45,27 +46,27 @@ const Fintech = () => {
 
         <div className=' mt-12 grid laptop:grid-cols-3 gap-7 laptop:gap-20'>
             <div className='firstRef text-justify border rounded-2xl shadow-2xl p-7 laptop:p-12'>
-                <p className='mb-4 text-secondary text-lg font-medium text-center'>Banking Solutions Web Applications:</p>
+                <p className='mb-4 text-secondary text-lg font-medium text-center'>Banking Solutions Web Applications</p>
                 <p>Build secure and user-friendly web applications for traditional and digital banking services.</p>
             </div>
 
             <div className='firstRef text-justify border rounded-2xl shadow-2xl p-7 laptop:p-12'>
-                <p className='mb-4 text-secondary text-lg font-medium text-center'>Digital Currency Platforms:</p>
+                <p className='mb-4 text-secondary text-lg font-medium text-center'>Digital Currency Platforms</p>
                 <p>Develop platforms for trading, managing, and utilizing digital currencies efficiently.</p>
             </div>
 
             <div className='firstRef text-justify border rounded-2xl shadow-2xl p-7 laptop:p-12'>
-                <p className='mb-4 text-secondary text-lg font-medium text-center'>Cryptocurrency Development:</p>
+                <p className='mb-4 text-secondary text-lg font-medium text-center'>Cryptocurrency Development</p>
                 <p>Create custom cryptocurrency solutions, including wallets, exchanges, and blockchain integration.</p>
             </div>
 
             <div className='firstRef text-justify border rounded-2xl shadow-2xl p-7 laptop:p-12'>
-                <p className='mb-4 text-secondary text-lg font-medium text-center'>Neo Banking Solutions:</p>
+                <p className='mb-4 text-secondary text-lg font-medium text-center'>Neo Banking Solutions</p>
                 <p>Innovate with modern, digital-first banking experiences that redefine customer interactions.</p>
             </div>
 
             <div className='firstRef text-justify border rounded-2xl shadow-2xl p-7 laptop:p-12'>
-                <p className='mb-4 text-secondary text-lg font-medium text-center'>Payment Gateway Integration:</p>
+                <p className='mb-4 text-secondary text-lg font-medium text-center'>Payment Gateway Integration</p>
                 <p>Implement seamless and secure payment gateway solutions to streamline transactions.</p>
             </div>
         </div>

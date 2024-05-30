@@ -14,7 +14,7 @@ const About = () => {
 
   return (
     <>
-        <div className='relative z-10 mt-72 text-center pb-16 overflow-y-clip'>
+        <div className='relative z-10 mt-12 tablet:mt-72 text-center pb-16 overflow-y-clip'>
             <div ref={svgRef} className='absolute w-full'>
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -27,13 +27,13 @@ const About = () => {
                 </svg>
             </div>
 
-            <div ref={container} className='mt-32 '>
-                <div className='sticky top-32 tablet:top-56 laptop:top-56'>
+            <div ref={container}>
+                <div className='sticky top-20 tablet:top-56 laptop:top-40'>
                     <div className='inline-block'><h1 className='text-4xl md:text-6xl font-bold laptop:mr-2'>How We Do </h1></div>
                     <div className='inline-block'><h1 className='text-4xl md:text-6xl font-bold '>What We Do </h1></div>
                 </div>
 
-                <div className='servicecontainer mt-20 '>
+                <div className='servicecontainer mt-20'>
                     <div className='grid grid-cols-1 mx-6'>
                     {
                         whatwedo.map((about, index) => (

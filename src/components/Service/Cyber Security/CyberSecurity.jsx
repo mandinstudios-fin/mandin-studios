@@ -45,27 +45,27 @@ const CyberSecurity = () => {
 
                     <div className='mt-12 grid laptop:grid-cols-3 gap-7 laptop:gap-20'>
                         <div className='firstRef text-justify border rounded-2xl shadow-2xl p-7 laptop:p-12'>
-                            <p className='mb-4 text-secondary text-lg font-medium text-center'>Network Security:</p>
+                            <p className='mb-4 text-secondary text-lg font-medium text-center'>Network Security</p>
                             <p>Secure your organization's network against cyber threats with advanced protection measures.</p>
                         </div>
 
                         <div className='firstRef text-justify border rounded-2xl shadow-2xl p-7 laptop:p-12'>
-                            <p className='mb-4 text-secondary text-lg font-medium text-center'>Application Security:</p>
+                            <p className='mb-4 text-secondary text-lg font-medium text-center'>Application Security</p>
                             <p>Ensure your applications are secure from vulnerabilities and threats through comprehensive security practices.</p>
                         </div>
 
                         <div className='firstRef text-justify border rounded-2xl shadow-2xl p-7 laptop:p-12'>
-                            <p className='mb-4 text-secondary text-lg font-medium text-center'>Custom Security Solutions:</p>
+                            <p className='mb-4 text-secondary text-lg font-medium text-center'>Custom Security Solutions</p>
                             <p>Tailor security solutions to fit the unique needs and challenges of your organization.</p>
                         </div>
 
                         <div className='firstRef text-justify border rounded-2xl shadow-2xl p-7 laptop:p-12'>
-                            <p className='mb-4 text-secondary text-lg font-medium text-center'>Zero Trust Strategy:</p>
+                            <p className='mb-4 text-secondary text-lg font-medium text-center'>Zero Trust Strategy</p>
                             <p>Implement a zero-trust approach to minimize risks by verifying every access request.</p>
                         </div>
 
                         <div className='firstRef text-justify border rounded-2xl shadow-2xl p-7 laptop:p-12'>
-                            <p className='mb-4 text-secondary text-lg font-medium text-center'>Penetration Testing:</p>
+                            <p className='mb-4 text-secondary text-lg font-medium text-center'>Penetration Testing</p>
                             <p>Identify and mitigate security weaknesses with thorough penetration testing services.</p>
                         </div>
                     </div>

@@ -4,6 +4,7 @@ import { Navbar, Contact, Main, Footer, WebDevelopment, Fintech, CyberSecurity }
 import ErrorPage from './components/ErrorPage/ErrorPage'
 import FollowUs from './components/FollowUs/FollowUs'
 import LocomotiveScroll from 'locomotive-scroll'
+import RoutedAbout from './components/RoutedAbout/RoutedAbout'
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Main />}/>
+        <Route path='/about' element={<RoutedAbout />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/services/webdevelopment' element={<WebDevelopment />} />
         <Route path='/services/fintech' element={<Fintech />} />

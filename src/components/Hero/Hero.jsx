@@ -39,7 +39,7 @@ const Hero = () => {
     <>
         <div className='flex flex-col laptop:flex-row justify-between items-center laptop:mx-24 laptop:mr-36 mt-10 laptop:mt-0'>
             <div className="">
-                <div>
+                <div className='ml-1'>
                     <h3>We make Digital and Simple</h3>
                 </div>
 
@@ -55,7 +55,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className='ml-1'>
                     <h3>Let's work together</h3>
                 </div>
             </div>

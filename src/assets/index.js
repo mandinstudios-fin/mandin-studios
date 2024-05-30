@@ -95,3 +95,5 @@ export const ServicesMainPages = {
     },
     
 };
+
+export const mainAnimations = [fintechAnimationMainPage, webAnimationMainPage, cyberAnimationMainPage]

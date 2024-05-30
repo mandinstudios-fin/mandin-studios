@@ -44,17 +44,17 @@ const WebDevelopment = () => {
 
         <div className='mt-12 grid laptop:grid-cols-3 gap-7 laptop:gap-20'>
           <div className='firstRef text-justify border rounded-2xl shadow-2xl p-7 laptop:p-12'>
-            <p className='mb-4 text-secondary text-lg font-medium text-center'>Web Application Development:</p>
+            <p className='mb-4 text-secondary text-lg font-medium text-center'>Web Application Development</p>
             <p>Create powerful, scalable, and secure web applications tailored to your business needs.</p>
           </div>
 
           <div className='firstRef text-justify border rounded-2xl shadow-2xl p-7 laptop:p-12'>
-            <p className='mb-4 text-secondary text-lg font-medium text-center'>Responsive Design:</p>
+            <p className='mb-4 text-secondary text-lg font-medium text-center'>Responsive Design</p>
             <p>Ensure your applications look and perform flawlessly across all devices and screen sizes.</p>
           </div>
 
           <div className='firstRef text-justify border rounded-2xl shadow-2xl p-7 laptop:p-12'>
-            <p className='mb-4 text-secondary text-lg font-medium text-center'>Custom Web Solutions:</p>
+            <p className='mb-4 text-secondary text-lg font-medium text-center'>Custom Web Solutions</p>
             <p>Develop bespoke web solutions that align perfectly with your business goals and user expectations.</p>
           </div>
         </div>
