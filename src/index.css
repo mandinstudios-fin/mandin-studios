@@ -29,6 +29,12 @@ html {
   z-index: 50;
 }
 
+.pinSection {
+  position: sticky;
+  top: 25px;
+  z-index: 50;
+}
+
 .active {
   @apply text-white/90 font-semibold
 }

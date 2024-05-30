@@ -60,7 +60,7 @@ const Navbar = () => {
 
   return (
     <>
-        <div id='navbar' className='top-0 sticky z-50 border-b border-[#385584]/10 backdrop-blur-sm'>
+        <div id='navbar' className='top-0 sticky z-[999] border-b border-[#385584]/10 backdrop-blur-sm'>
             <div className='relative' onMouseLeave={mouseLeaveFunction}>
                 <nav className='flex justify-between mx-3 tablet:mx-8 laptop:mx-16 laptop:py-2' >
                     <div className='w-[40%] laptop:w-[15%]'>
@@ -104,7 +104,7 @@ const Navbar = () => {
                 <AnimatePresence>
                     {/* Service Cards */}
                     {servicesArrow && 
-                        <motion.div initial={{ y: "-100vh" }} animate={{ y: 0 }} exit={{y: "-100vh", opacity: 0}} transition={{ type: "spring", stiffness: 100, damping: 20 }} className='serviceCard absolute z-10 w-full hidden laptop:block overflow-hidden'>
+                        <motion.div initial={{ y: "-100vh" }} animate={{ y: 0 }} exit={{y: "-100vh", opacity: 0}} transition={{ type: "spring", stiffness: 100, damping: 20 }} className='serviceCard absolute z-[999] w-full hidden laptop:block overflow-hidden'>
                             <div className='flex gap-5 justify-between h-auto w-full p-20 bg-primary overflow-hidden'>
                                 <motion.div initial={{ y: "-15vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-15vh", opacity: 0 }} transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.6 }} className='serviceCards w-1/3 px-12 py-7 border border-[#358584] rounded-3xl text-3xl'>
                                     <Link onClick={changeServicesArrow} to={`/services/fintech`}>
@@ -134,7 +134,7 @@ const Navbar = () => {
                 <AnimatePresence>
                     {/* Burger Menu */}
                     {isBurgerMenu &&
-                        <motion.div initial={{ y: "-100vh" }} animate={{ y: 0 }} exit={{y: "-100vh", opacity: 0}} transition={{ type: "spring", stiffness: 100, damping: 20 }} className='serviceCardPhone laptop:hidden bg-primary absolute z-10 w-full h-auto overflow-y-visible pb-32'>
+                        <motion.div initial={{ y: "-100vh" }} animate={{ y: 0 }} exit={{y: "-100vh", opacity: 0}} transition={{ type: "spring", stiffness: 100, damping: 20 }} className='serviceCardPhone laptop:hidden bg-primary absolute z-[999] w-full h-auto overflow-y-visible pb-32'>
                             <div className='h-auto w-full mx-auto p-5 bg-primary overflow-hidden grid gap-5 justify-center grid-cols-2 tablet:grid-cols-3'>
                                 <motion.div initial={{ y: "-15vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-15vh", opacity: 0 }} transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.6 }} className='serviceCards p-4 w-auto border border-[#358584] rounded-lg text-center text-2xl cursor-pointer'>
                                     <Link to={`/services/fintech`} onClick={handleBurgerMenu}>

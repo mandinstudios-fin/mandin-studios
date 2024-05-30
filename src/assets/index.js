@@ -97,3 +97,34 @@ export const ServicesMainPages = {
 };
 
 export const mainAnimations = [fintechAnimationMainPage, webAnimationMainPage, cyberAnimationMainPage]
+
+export const products = [
+    {
+        id: 0,
+        title: "Centurion Builders",
+        image: "https://mandinstudios.com/images/work/11.png",
+        color: "#a2b3d4",
+        text: "black"
+    },
+    {
+        id: 1,
+        title: "PCS Passport",
+        image: "https://mandinstudios.com/images/work/33.png",
+        color: "#385584",
+        text: "#f5f5f5"
+    },
+    {
+        id: 2,
+        title: "Capricorn",
+        image: "https://mandinstudios.com/images/work/44.png",
+        color: "#a2b3d4",
+        text: "black"
+    },
+    {
+        id: 3,
+        title: "Illusive",
+        image: "https://mandinstudios.com/images/work/76.png",
+        color: "#385584",
+        text: "#f5f5f5"
+    },
+]

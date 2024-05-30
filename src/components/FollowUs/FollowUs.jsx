@@ -9,7 +9,7 @@ const FollowUs = () => {
   ];
   
   return (
-    <div className='fixed right-0 top-[40vh] z-50 '>
+    <div className='fixed right-0 top-[40vh] z-[999] '>
       <div className='inline-block text-center h-[20vh] -mr-4 tablet:mr-0'>
         {socialMediaPlatforms.map((platform, index) => (
           <platform.icon key={index} color={platform.color} fontSize={'1.4em'} className='mb-4 mx-auto cursor-pointer' onClick={platform.onClick} />
