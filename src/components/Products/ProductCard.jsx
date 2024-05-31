@@ -19,7 +19,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className='pCard sticky laptop:top-32 cursor-pointer'>
-        <div className={`relative -z-1 bg-[${color}] text-[${text}] rounded-3xl h-[30vh] tablet:h-[33vh] laptop:w-[43vh] laptop:h-[55vh] ${rotation} hover:scale-105 transition duration-500`}>
+        <div className={`relative -z-1 bg-[${color}] text-[${text}] rounded-3xl h-[30vh] tablet:h-[33vh] laptop:w-[43vh] laptop:h-[55vh] ${rotation} hover:scale-105 transition duration-500 shadow-lg`}>
             <img src={image} className='object-cover w-full h-full rounded-3xl'/>
         </div>
     </div>

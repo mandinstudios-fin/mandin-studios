@@ -29,7 +29,7 @@ const FooterContent = () => {
       )
   }
   return (
-      <div className='bg-[#002B55] h-full w-full flex flex-col justify-center items-center' style={{backgroundImage: `url(${footerbg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+      <div className='bg-[#385584] h-full w-full flex flex-col justify-center items-center' style={{backgroundImage: `url(${footerbg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
         <div className='mb-12 w-[50%] tablet:w-[40%] laptop:w-auto'>
           <img src={mdlogowhite}/>
         </div>

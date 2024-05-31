@@ -37,7 +37,7 @@ const Products = () => {
         // };
 
         gsap.fromTo(".h1", {
-            y: "50%",
+            y: "200%",
             opacity: 0
         }, {
             y: 0,

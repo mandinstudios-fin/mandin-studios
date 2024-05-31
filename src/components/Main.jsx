@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Hero, Services, About, Teams, Footer } from './index'
+import { Hero, Services, About, Teams, Vision } from './index'
 
 const Main = () => {
   useEffect(() => {
@@ -11,6 +11,7 @@ const Main = () => {
       <Hero />
       <About />
       <Teams />
+      <Vision />
       <Services />
     </>
   )

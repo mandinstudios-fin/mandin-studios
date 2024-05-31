@@ -51,17 +51,17 @@ export const whatwedo = [
 export const teams = [
     {
         title: "MDS Operations Team",
-        image: "https://mdstudios.s3.ap-south-1.amazonaws.com/Operations.jpg",
+        image: "https://mdstudios.s3.ap-south-1.amazonaws.com/operationsteam.png",
         description: "Our Operations Team is the heartbeat of MDS, ensuring smooth and efficient execution of all our business activities. We streamline processes, maintain quality control, manage resources effectively, and drive continuous improvement. With a focus on operational excellence, our team guarantees that MDS consistently delivers top-tier results. Committed to precision and reliability, the Operations Team is dedicated to optimizing performance and supporting our growth."
     },
     {
         title: "MDS Information Technology",
-        image: "https://mdstudios.s3.ap-south-1.amazonaws.com/Technology.png",
+        image: "https://mdstudios.s3.ap-south-1.amazonaws.com/information+techcnology-1.png",
         description: "The MDS Information Technology team is at the forefront of technological innovation, providing robust IT infrastructure and advanced systems. We prioritize cybersecurity, deploy cutting-edge solutions, and offer dedicated tech support. Our focus on continuous innovation ensures MDS stays ahead in the digital landscape. By safeguarding data and developing custom tech solutions, our IT team empowers the entire organization to achieve excellence."
     },
     {
         title: "Client Development",
-        image: "https://mdstudios.s3.ap-south-1.amazonaws.com/Client-development.jpg",
+        image: "https://mdstudios.s3.ap-south-1.amazonaws.com/clinet-development.png",
         description: "At MDS, our clients are our top priority. The Client Development team builds strong, lasting relationships by understanding unique client needs and offering tailored solutions. We work as strategic partners, engaging proactively and providing exceptional service. Our commitment to client success drives us to deliver unparalleled support, ensuring that our clients thrive and achieve their goals with MDS by their side."
     }
 ]

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-import mdlogo from '../../assets/images/mdlogo.png'
+import mdlogo from '../../assets/images/mdslogo.png'
 import menu from '../../assets/images/menu.svg'
 import { animations } from '../../assets/index'
 
@@ -80,7 +80,7 @@ const Navbar = () => {
                     </div>
 
                     <div onClick={handleBurgerMenu} className='laptop:hidden tablet:w-12 my-auto laptop:-mr-32 text-right cursor-pointer'>
-                        {isBurgerMenu ? <IoMdClose size={32} color={'#385584'}/> : <IoMdMenu size={32} color={'#385584'}/>}
+                        {isBurgerMenu ? <IoMdClose size={35} color={'#385584'} className=''/> : <IoMdMenu size={35} color={'#385584'} className=''/>}
                     </div>
 
                     <div className='hidden laptop:block mt-9'>
@@ -93,21 +93,21 @@ const Navbar = () => {
                     {servicesArrow && 
                         <motion.div initial={{ y: "-100vh" }} animate={{ y: 0 }} exit={{y: "-100vh", opacity: 0}} transition={{ type: "spring", stiffness: 100, damping: 20 }} className='serviceCard absolute z-[999] w-full hidden laptop:block overflow-hidden'>
                             <div className='flex gap-5 justify-between h-auto w-full p-20 bg-primary overflow-hidden'>
-                                <motion.div initial={{ y: "-15vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-15vh", opacity: 0 }} transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.6 }} className='serviceCards w-1/3 px-12 py-7 border border-[#358584] rounded-3xl text-3xl'>
+                                <motion.div initial={{ y: "-15vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-15vh", opacity: 0 }} transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.6 }} className='serviceCards w-1/3 px-12 py-7 border border-[#cfcfcf] rounded-3xl text-3xl'>
                                     <Link onClick={changeServicesArrow} to={`/services/fintech`}>
                                         <h1 className='text-left font-medium'>Fintech</h1>
                                         <Lottie animationData={fintechAnimation} loop={true} />
                                     </Link>
                                 </motion.div>
                                 
-                                <motion.div initial={{ y: "-15vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-15vh", opacity: 0 }} transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.7 }} className='serviceCards w-1/3 px-12 py-7 border border-[#358584] rounded-3xl text-3xl'>
+                                <motion.div initial={{ y: "-15vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-15vh", opacity: 0 }} transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.7 }} className='serviceCards w-1/3 px-12 py-7 border border-[#cfcfcf] rounded-3xl text-3xl'>
                                     <Link onClick={changeServicesArrow} to={`/services/webdevelopment`}>
                                         <h1 className='text-left font-medium'>Web Development</h1>
                                         <Lottie animationData={webdevAnimation} loop={true} />
                                     </Link>
                                 </motion.div>
 
-                                <motion.div initial={{ y: "-15vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-15vh", opacity: 0 }} transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.8 }} className='serviceCards w-1/3 px-12 py-7 border border-[#358584] rounded-3xl text-3xl'>
+                                <motion.div initial={{ y: "-15vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-15vh", opacity: 0 }} transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.8 }} className='serviceCards w-1/3 px-12 py-7 border border-[#cfcfcf] rounded-3xl text-3xl'>
                                     <Link onClick={changeServicesArrow} to={`/services/cybersecurity`}>
                                         <h1 className='text-left font-medium'>Cyber Security</h1>
                                         <Lottie animationData={cyberAnimation} loop={true} />
@@ -123,21 +123,21 @@ const Navbar = () => {
                     {isBurgerMenu &&
                         <motion.div initial={{ y: "-100vh" }} animate={{ y: 0 }} exit={{y: "-100vh", opacity: 0}} transition={{ type: "spring", stiffness: 100, damping: 20 }} className='serviceCardPhone laptop:hidden bg-primary absolute z-[999] w-full h-auto overflow-y-visible pb-32'>
                             <div className='h-auto w-full mx-auto p-5 bg-primary overflow-hidden grid gap-5 justify-center grid-cols-2 tablet:grid-cols-3'>
-                                <motion.div initial={{ y: "-15vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-15vh", opacity: 0 }} transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.6 }} className='serviceCards p-4 w-auto border border-[#358584] rounded-lg text-center text-2xl cursor-pointer'>
+                                <motion.div initial={{ y: "-15vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-15vh", opacity: 0 }} transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.6 }} className='serviceCards p-4 w-auto border border-[#cfcfcf] rounded-lg text-center text-2xl cursor-pointer'>
                                     <Link to={`/services/fintech`} onClick={handleBurgerMenu}>
                                         <h1 className='text-left'>Fintech</h1>
                                         <Lottie animationData={fintechAnimation} loop={true} />
                                     </Link>
                                 </motion.div>
 
-                                <motion.div initial={{ y: "-15vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-15vh", opacity: 0 }} transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.7 }} className='serviceCards p-4 w-auto border border-[#358584] rounded-lg text-center text-2xl cursor-pointer'>
+                                <motion.div initial={{ y: "-15vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-15vh", opacity: 0 }} transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.7 }} className='serviceCards p-4 w-auto border border-[#cfcfcf] rounded-lg text-center text-2xl cursor-pointer'>
                                     <Link to={`/services/webdevelopment`} onClick={handleBurgerMenu}>
                                         <h1 className='text-justify'>Web Development</h1>
                                         <Lottie animationData={webdevAnimation} loop={true} />
                                     </Link>
                                 </motion.div>
 
-                                <motion.div initial={{ y: "-15vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-15vh", opacity: 0 }} transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.8 }} className='serviceCards p-4 w-auto border border-[#358584] rounded-lg text-center text-2xl cursor-pointer'>
+                                <motion.div initial={{ y: "-15vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-15vh", opacity: 0 }} transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.8 }} className='serviceCards p-4 w-auto border border-[#cfcfcf] rounded-lg text-center text-2xl cursor-pointer'>
                                     <Link to={`/services/cybersecurity`} onClick={handleBurgerMenu}>
                                         <h1 className='text-justify'>Cyber Security</h1>
                                         <Lottie animationData={cyberAnimation} loop={true} />
