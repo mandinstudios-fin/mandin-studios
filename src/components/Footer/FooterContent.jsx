@@ -16,7 +16,7 @@ const FooterContent = () => {
 
             <div className='flex flex-col gap-2 text-[#f5f5f5]/80'>
                 <p><NavLink to={`/`}>Home</NavLink></p>
-                <p><NavLink to={`/`}>Products</NavLink></p>
+                <p><NavLink to={`/products`}>Products</NavLink></p>
                 <p><NavLink to={`/contact`}>Contact Us</NavLink></p>
             </div>
 

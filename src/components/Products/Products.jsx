@@ -51,9 +51,9 @@ const Products = () => {
                 <div className='contentContainer overflow-hidden'>
                     <h1 className='h1 text-3xl laptop:text-5xl font-medium'>Our <span className='text-primary'>Products</span></h1>
 
-                    <div className='pinSection top-[50px] overflow-hidden '>
-                        <div className='top-0 sticky'>
-                            <div className='pinWrap p-7 flex flex-col desktop:flex-row items-center overflow-hidden'>
+                    <div className='pinSection'>
+                        <div className='pinWrap'>
+                            <div className='pinWrap p-9 flex flex-col desktop:flex-row items-center'>
                                 {products.map((product) => <ProductCard product={product} key={product.id}/>)}
                             </div>
                         </div>

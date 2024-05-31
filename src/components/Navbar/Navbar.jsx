@@ -6,7 +6,7 @@ import menu from '../../assets/images/menu.svg'
 import { animations } from '../../assets/index'
 
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDownIcon } from '@heroicons/react/24/solid'
+import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid'
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -27,12 +27,7 @@ const Navbar = () => {
     })
 
     const [servicesArrow, setServicesArrow] = useState(false)
-    const [procuctsArrow, setProductsArrow] = useState(false)
     const [isBurgerMenu, setIsBurgerMenu] = useState(false)
-
-    // MouseLeave States
-    const [navMouseLeave, setNavMouseLeave] = useState(false);
-    const [serviveMouseLeave, setServiveMouseLeave] = useState(true);
 
     const changeServicesArrow = () => {
         setServicesArrow(prev => !prev)
@@ -42,20 +37,12 @@ const Navbar = () => {
         setServicesArrow(false)
     }
 
-    const handleContact = () => {
-        setServicesArrow(false)
-    }
-
     const handleBurgerMenu = () => {
         setIsBurgerMenu(prev => !prev)
     }
 
     const mouseLeaveFunction = () => {
         setServicesArrow(false)
-    }
-
-    const scrollToAbout = () => {
-        document.getElementById("about").scrollIntoView({ behavior: "smooth", block: "nearest" });
     }
 
   return (
@@ -70,23 +57,23 @@ const Navbar = () => {
                     
                     <div>
                         <ul className='hidden laptop:flex laptop:gap-7 pt-9'>
-                            <li className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
+                            <li onClick={changeProductsArrow} className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
                                <Link to={`/`}>Home</Link>
                             </li>
 
                             <li onClick={changeServicesArrow} className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
-                                Services <span id='serviceIcon'><ChevronDownIcon className='w-4 h-4 inline-block mb-1'/></span>
+                                Services <span id='serviceIcon'>{servicesArrow ? <ChevronUpIcon className='w-4 h-4 inline-block mb-1'/> : <ChevronDownIcon className='w-4 h-4 inline-block mb-1'/>}</span>
                             </li>
 
                             <li onClick={changeProductsArrow} className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
                                <Link to={`/products`}>Products</Link>
                             </li>
 
-                            <li className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
+                            <li onClick={changeProductsArrow} className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
                                 <Link to={`/about`}>About</Link>
                             </li>
 
-                            <li onClick={handleContact} className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
+                            <li onClick={changeProductsArrow} className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
                                 <Link to={'/contact'}>Contact</Link> <span></span>
                             </li>
                         </ul>
