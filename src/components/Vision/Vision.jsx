@@ -4,7 +4,7 @@ const Vision = () => {
   return (
     <div className=' bg-primary laptop:mt-[6.9rem] text-center px-6 pb-12'>
         <h1 className='text-4xl laptop:text-6xl py-16 font-medium'>Your Vision is our Mission</h1>
-        <div className='grid laptop:grid-cols-2 laptop:gap-0 laptop:px-56'>
+        <div className='grid laptop:grid-cols-2 items-center laptop:gap-0 laptop:px-56'>
             <div className='w-96'><img src='https://cdn.prod.website-files.com/6442e916a71be626c853bd50/645117ae9ad8eb44f7106fdb_two-people-elegant-paper-work-p-800.jpg' className='w-full h-full object-contain rounded-2xl'/></div>
             <div className='pt-12 laptop:pt-0 text-lg'>
                 <p className='text-justify'>At Md Studios, we are driven by a singular purpose: to bring your vision to life. As a pioneering startup in the fintech industry, our mission is to develop innovative, high-quality applications that cater to the evolving needs of businesses and individuals in the digital era.</p>

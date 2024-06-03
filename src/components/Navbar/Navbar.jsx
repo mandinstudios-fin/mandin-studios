@@ -97,7 +97,7 @@ const Navbar = () => {
                         </div>
 
                         <div className='laptop:hidden'>
-                            <button className=' bg-[#385584] text-white font-medium px-2 py-2 text-xs rounded-full whitespace-nowrap'>Onln Coin Live</button>
+                            <button className=' bg-[#385584] text-white font-medium px-2 py-2 text-xs tablet:text-lg rounded-full whitespace-nowrap'>Onln Coin Live</button>
                         </div>
 
                         <div className='hidden laptop:block'>
