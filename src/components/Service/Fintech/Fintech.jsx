@@ -40,7 +40,7 @@ const Fintech = () => {
         </div>
 
         <div className='firstRef mt-16'>
-            <button className='bg-primary p-3 px-8 rounded-full text-lg font-medium hover:scale-105 transition duration-500'><span>Let's connect</span> <span><MdOutlineArrowOutward className='inline'/></span></button>
+            <button className='bg-primary p-3 px-8 rounded-full drop-shadow-2xl text-lg font-medium hover:scale-105 transition duration-500'><span>Let's connect</span> <span><MdOutlineArrowOutward className='inline'/></span></button>
         </div>
 
         <div className='mt-12 laptop:mt-10'>

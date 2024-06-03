@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Banner from '../Banner/Banner';
 import { gsap } from 'gsap';
 import banner from '../../assets/images/banner-02.svg'
 import { useGSAP } from '@gsap/react';

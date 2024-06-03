@@ -25,7 +25,7 @@ const About = () => {
     }, []);
 
   return (
-    <div id='about'>
+    <div id='about h-auto'>
         <div className='mt-14 laptop:mt-32'>
             <div className='h-12 w-full bg-primary'></div>
         </div>
@@ -40,7 +40,7 @@ const About = () => {
                         </div>
 
                         <div className='mt-7 ml-0 mx-4 laptop:mx-0'>
-                            <p className='tracking-wide text-lg text-justify'>
+                            <p className='tracking-wide laptop:text-xl text-justify'>
                                 MD Studios, a visionary creative studio, brings to life digital (and enchanting) concepts, products, and experiences. The name "MDS" signifies our commitment to elevating the standards of MDs – making them better for the individuals and organizations we partner with, enhancing user experiences, contributing to our well-being, and fostering a positive impact on our planet. While it may seem like a lofty expectation for design and technology, rest assured, we've consulted with them, and they're fully on board with the challenge.
                             </p>
                         </div>
