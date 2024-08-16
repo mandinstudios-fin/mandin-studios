@@ -35,7 +35,7 @@ const About = () => {
                 <div className='ml-5 mt-8 laptop:w-1/2 mb-12 laptop:mb-0 desktop:mb-0'>
                     <div className='laptop:ml-40 laptop:mr-32'>
                         <div className='inline-block'>
-                            <div><h1 className='text-4xl laptop:text-7xl font-bold mb-7'>About MD Studios</h1></div>
+                            <div><h1 className='text-4xl laptop:text-6xl font-bold mb-7 text-nowrap'>About MD Studios</h1></div>
                             <div className='underlinediv w-auto h-1 bg-primary' ref={divRef}></div>
                         </div>
 

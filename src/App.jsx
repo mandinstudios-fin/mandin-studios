@@ -1,22 +1,16 @@
 import { useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import Lenis from './components/Lenis/Lenis'
 import { Navbar, Contact, Main, Footer, WebDevelopment, Fintech, CyberSecurity } from './components/index'
 import ErrorPage from './components/ErrorPage/ErrorPage'
 import FollowUs from './components/FollowUs/FollowUs'
-import LocomotiveScroll from 'locomotive-scroll'
 import RoutedAbout from './components/RoutedAbout/RoutedAbout'
 import Products from './components/Products/Products'
 
 function App() {
-  useEffect(() => {
-    const locomotiveScroll = new LocomotiveScroll();
-    return () => {
-      locomotiveScroll.destroy();
-    };
-  }, []);
 
   return (
-    <>
+    <Lenis>
       <FollowUs />
       <Navbar />
       <Routes>
@@ -30,7 +24,7 @@ function App() {
         <Route path='/*' element={<ErrorPage />} />
       </Routes>
       <Footer />
-    </>
+    </Lenis>
   )
 }
 

@@ -61,14 +61,14 @@ const Navbar = () => {
     <>
         <div id='navbar' className='sticky z-[999] border-b border-[#385584]/10 backdrop-blur-sm'>
             <div className='relative' onMouseLeave={mouseLeaveFunction}>
-                <nav className='flex justify-between mx-3 tablet:mx-8 laptop:mx-16 laptop:py-2' >
-                    <div className='w-[40%] laptop:w-[15%]'>
+                <nav className='flex items-center justify-between mx-3 tablet:mx-8 laptop:mx-16 laptop:py-1' >
+                    <div className='w-[40%] laptop:w-[10%]'>
                         <img src={mdlogo}/>
                     </div>
 
                     
                     <div>
-                        <ul className='hidden laptop:flex laptop:gap-7 pt-9'>
+                        <ul className='hidden laptop:flex laptop:gap-7'>
                             <li onClick={changeProductsArrow} className='font-medium text-[#385584] cursor-pointer hover:bg-primary/20 p-2 px-4 rounded-xl transition duration-500'>
                                <Link to={`/`}>Home</Link>
                             </li>

@@ -38,8 +38,8 @@ const Hero = () => {
 
   return (
     <>
-        <div className='flex flex-col laptop:flex-row justify-between items-center laptop:mx-24 laptop:mr-36 mt-10 laptop:mt-0'>
-            <div className="">
+        <div className=' flex flex-col laptop:flex-row justify-between items-center laptop:mx-24 laptop:mr-36 mt-10 laptop:mt-0'>
+            <div className=" my-auto">
                 <div className='ml-1'>
                     <h3>We make Digital and Simple</h3>
                 </div>
