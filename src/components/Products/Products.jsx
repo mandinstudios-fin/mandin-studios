@@ -53,7 +53,7 @@ const Products = () => {
 
                     <div className='pinSection'>
                         <div className='pinWrap'>
-                            <div className='pinWrap p-9 grid gap-3 tablet:gap-5 laptop:gap-24 grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 items-center'>
+                            <div className='pinWrap p-9 grid gap-10 tablet:gap-5 laptop:gap-24 grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 items-center'>
                                 {products.map((product) => <ProductCard product={product} key={product.id}/>)}
                             </div>
                         </div>

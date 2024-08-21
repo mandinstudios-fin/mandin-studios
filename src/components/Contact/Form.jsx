@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 
 const Form = () => {
     const location = useLocation();
-    console.log(location)
     if(location.pathname == '/contact') {
         document.querySelector('html').style.backgroundColor = "white"
     }

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 import mdlogo from '../../assets/images/mdslogo.png'
 import menu from '../../assets/images/menu.svg'
@@ -13,6 +13,7 @@ import { useGSAP } from '@gsap/react'
 import Lottie from "lottie-react";
 
 const Navbar = () => {
+    const navigate = useNavigate();
     const [ fintechAnimation, webdevAnimation, cyberAnimation ] = animations;
 
     useGSAP(() => {
@@ -62,7 +63,7 @@ const Navbar = () => {
         <div id='navbar' className='sticky z-[999] border-b border-[#385584]/10 backdrop-blur-sm'>
             <div className='relative' onMouseLeave={mouseLeaveFunction}>
                 <nav className='flex items-center justify-between mx-3 tablet:mx-8 laptop:mx-16 laptop:py-1' >
-                    <div className='w-[40%] laptop:w-[10%]'>
+                    <div className='w-[40%] laptop:w-[10%] cursor-pointer' onClick={() => navigate(`/`)}>
                         <img src={mdlogo}/>
                     </div>
 
@@ -97,11 +98,11 @@ const Navbar = () => {
                         </div>
 
                         <div className='laptop:hidden'>
-                            <button className=' bg-[#385584] text-white font-medium px-2 py-2 text-xs tablet:text-lg rounded-full whitespace-nowrap'>Onln Coin Live</button>
+                            <button className=' bg-[#385584] text-white font-medium px-2 py-2 text-xs tablet:text-lg rounded-full whitespace-nowrap'>Olin Coin Live</button>
                         </div>
 
                         <div className='hidden laptop:block'>
-                            <button className=' bg-[#385584] text-white font-medium px-6 py-2 text-sm rounded-full whitespace-nowrap'>Onln Coin Live</button>
+                            <button className=' bg-[#385584] text-white font-medium px-6 py-2 text-sm rounded-full whitespace-nowrap'>Olin Coin Live</button>
                         </div>
                     </div>
                     

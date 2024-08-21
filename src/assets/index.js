@@ -97,34 +97,37 @@ export const ServicesMainPages = {
 };
 
 export const mainAnimations = [fintechAnimationMainPage, webAnimationMainPage, cyberAnimationMainPage]
+import olivia from './images/olivia.svg'
+import olin from './images/olin.png'
+import culinary from './images/cilinary.jpg'
 
 export const products = [
     {
         id: 0,
-        title: "Centurion Builders",
-        image: "https://mandinstudios.com/images/work/11.png",
-        color: "#a2b3d4",
-        text: "black"
+        title: "Olivia Token",
+        image: olivia,
+        color: "white",
+        text: "white"
     },
     {
         id: 1,
-        title: "PCS Passport",
-        image: "https://mandinstudios.com/images/work/33.png",
-        color: "#385584",
-        text: "#f5f5f5"
+        title: "Culinary Artist",
+        image: culinary,
+        color: "white",
+        text: "white"
     },
     {
         id: 2,
-        title: "Capricorn",
-        image: "https://mandinstudios.com/images/work/44.png",
-        color: "#a2b3d4",
-        text: "black"
+        title: "Olin Token",
+        image: olin,
+        color: "white",
+        text: "white"
     },
     {
         id: 3,
-        title: "Illusive",
-        image: "https://mandinstudios.com/images/work/76.png",
-        color: "#385584",
-        text: "#f5f5f5"
+        title: "GameFi",
+        image: "https://static.vecteezy.com/system/resources/previews/027/445/546/non_2x/gamefi-blockchain-games-icon-vector.jpg",
+        color: "white",
+        text: "white"
     },
 ]

@@ -17,7 +17,7 @@ const RoutedAbout = () => {
 
   return (
     <div>
-        <div className='text-center mx-7 laptop:mx-20 mt-4 pb-56'>
+        <div className='text-center mx-7 laptop:mx-20 mt-16 pb-56'>
             <div className='myRef laptop:mx-52'>
                 <h1 className='myRef text-3xl laptop:text-6xl text-left font-medium'>A visionary creative studio,<br /> bringing <span className='text-primary'>life</span> to</h1>
                 <h1 className='myRef text-3xl laptop:text-6xl text-left font-medium'>concepts, products and experiences</h1>

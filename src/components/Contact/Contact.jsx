@@ -39,7 +39,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className='contactbody mx-8 tablet:mx-16 laptop:mx-28 bg-white pb-32 overflow-hidden'>
+      <div className='contactbody mx-8 tablet:mx-16 laptop:mx-28 bg-white pb-32 overflow-hidden mt-8'>
         <div className='mt-4 '>
             <div>
               <div className='contactheading1'><h1 className='text-[#385584] font-semibold text-2xl tablet:text-5xl laptop:text-7xl tracking-widest pl-6 laptop:pl-36 laptop:mb-3'>Let's develop your</h1></div>
